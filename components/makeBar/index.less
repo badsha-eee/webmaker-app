@@ -1,0 +1,44 @@
+#makeBar {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    padding: 10px 32px;
+    border-top: solid 1px #E1ECF1;
+
+    .slideToggle {
+        overflow: auto;
+
+        a {
+            width: 50%;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            padding: 12px 0;
+            color: white;
+            opacity: .5;
+
+            &.active {
+                cursor: pointer;
+            }
+        }
+
+        .wrapper {
+            position: relative;
+            background: @turquoise;
+            margin: 0 auto;
+            border-radius: 30px;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .active {
+            background: white;
+            border: solid 1px @turquoise;
+            border-radius: 30px;
+            color: @highlight;
+            opacity: 1;
+        }
+    }
+}

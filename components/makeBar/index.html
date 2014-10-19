@@ -1,0 +1,6 @@
+<div class="slideToggle">
+  <div class="wrapper">
+    <a v-class="active:params.mode === 'play'" href="/make/{{id}}/play">{{ 'Preview' | i18n }}</a>
+    <a v-class="active:params.mode === 'edit'" href="/make/{{id}}/edit">{{ 'Edit' | i18n }}</a>
+  </div>
+</div>

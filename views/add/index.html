@@ -1,0 +1,8 @@
+<ul>
+    <li v-repeat="block: blocks">
+        <a data-block="{{block.id}}" href="/make/{{app.id}}/edit">
+            <img src="{{block.icon}}" alt="{{block.name}}" />
+            <p>{{ block.name | i18n }}</p>
+        </a>
+    </li>
+</ul>

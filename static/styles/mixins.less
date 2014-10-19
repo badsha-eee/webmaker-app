@@ -1,0 +1,38 @@
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// For .main containers
+.header-space() {
+    padding: @header-height 0 @header-height 0;
+}
+
+// Headings for list-cell, forms
+.section-heading() {
+    display: block;
+    padding: @list-cell-padding;
+    margin: 0;
+    color: @darkGrey;
+    font-weight: 600;
+    font-size: @list-cell-lh-font-size;
+    border-bottom: 1px solid @lightGrey;
+    &.with-border-top {
+        border-top: 1px solid @lightGrey;
+    }
+}
+
+// Lists
+.list-reset() {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

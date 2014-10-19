@@ -1,0 +1,49 @@
+#navigationBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: @header-height;
+    border-bottom: 1px solid @lightGrey;
+    background-color: @white;
+    text-align: center;
+
+    h1 {
+        display: inline-block;
+        margin: 12px auto 0 auto;
+        color: @highlight;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    button,
+    a {
+        position: absolute;
+        top: 0;
+        min-width: 40px;
+        height: 100%;
+        background: none;
+        color: @highlight;
+        border: none;
+        outline: none;
+        padding: 5px 20px 0;
+        line-height: (@header-height - 10s);
+        text-decoration: none;
+        font-size: 13px;
+
+        &:first-child {
+            left: 0;
+        }
+        &:last-child {
+            right: 0;
+        }
+        &.back {
+            padding-top: 0;
+            font-size: 1.4em;
+        }
+
+    }
+}
